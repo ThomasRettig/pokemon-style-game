@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pokemon Game</title>
     <style>
-      * {
-        font-family: 'Press Start 2P', Monaco, Consolas, "Lucida Console", monospace;
+      @font-face {
+        font-family: 'Fixedsys';
+        src: url('fonts/fixedsys.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
       }
 
       body {
@@ -18,7 +21,14 @@
         position: relative;
       }
 
+      h1, button {
+        font-family: 'Fixedsys', monospace;
+        font-size: 25px;
+        letter-spacing: 0.5px;
+      }
+
       #canvas {
+        max-width: 100%;
         image-rendering: pixelated;
       }
 
@@ -111,7 +121,6 @@
       button {
         border: 0;
         cursor: pointer;
-        font-size: 16px;
       }
 
       button:hover {
@@ -150,8 +159,8 @@
       </div>
     </main>
   </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://unpkg.com/howler@2.2.3/dist/howler.min.js"></script>
+  <script src="https://unpkg.com/gsap@3.9.1/dist/gsap.min.js"></script>
   <script src="data/audio.js"></script>
   <script src="data/battleZones.js"></script>
   <script src="data/collisions.js"></script>
