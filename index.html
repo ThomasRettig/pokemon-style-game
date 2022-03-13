@@ -6,11 +6,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <style>
       * {
-        font-family: 'Press Start 2P', cursive;
+        font-family: 'Press Start 2P', Monaco, Consolas, "Lucida Console", monospace;
       }
 
       body {
         background-color: black;
+      }
+
+      main {
+        display: inline-block;
+        position: relative;
       }
 
       h1 {
@@ -29,7 +34,7 @@
     </style>
   </head>
   <body>
-  <div style="display: inline-block; position: relative">
+  <main>
     <div
       id="overlappingDiv"
       style="
@@ -157,7 +162,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </main>
   </body>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"
